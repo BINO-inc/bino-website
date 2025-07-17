@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | BINO.inc</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .logo {
+      width: 100px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      padding: 10px;
+    }
+
+    nav ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff1744;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      color: #ff1744;
+      margin: 40px 0 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .blog-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .blog-post {
+      background-color: #1a1a1a;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-left: 5px solid #ff1744;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(255, 23, 68, 0.3);
+    }
+
+    .blog-post h3 {
+      color: #ff1744;
+      margin-bottom: 5px;
+    }
+
+    .blog-post .date {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .blog-post p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111;
+      margin-top: 50px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #e53935;
+      font-size: 24px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff1744;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔝 Navigation -->
+  <header class="main-header">
+    <img src="BINO.png" alt="Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✍️ Blog Section -->
+  <h1 class="section-title">Latest Ideas & News</h1>
+
+  <section class="blog-container">
+    <div class="blog-post">
+      <h3>🚀 3 Tech Trends to Watch in 2026</h3>
+      <div class="date">Published: July 2025</div>
+      <p>Discover how AI, blockchain, and immersive web experiences are reshaping the future of business innovation.</p>
+    </div>
+
+    <div class="blog-post">
+      <h3>💡 How to Build a Business from Scratch</h3>
+      <div class="date">Published: June 2025</div>
+      <p>From idea to execution, explore how BINO.inc helps startups turn bold visions into market-ready realities.</p>
+    </div>
+
+    <div class="blog-post">
+      <h3>🎯 Why Every Business Needs a Custom Project</h3>
+      <div class="date">Published: May 2025</div>
+      <p>Generic solutions no longer work. Learn why businesses thrive when they invest in exclusive, tailored ideas.</p>
+    </div>
+  </section>
+
+  <!-- 📩 Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="mailto:bino89921@gmail.com" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/bino.inc" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p style="color: #888; margin-top: 10px;">&copy; 2025 BINO.inc – All rights reserved</p>
+  </footer>
+
+</body>
+</html>

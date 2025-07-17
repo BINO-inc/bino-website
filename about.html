@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | BINO.inc</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 10%;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1;
+      animation: fadeInLeft 1s ease forwards;
+    }
+
+    .about-img {
+      flex: 1;
+      animation: fadeInRight 1s ease forwards;
+    }
+
+    .about-img img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 23, 68, 0.4);
+    }
+
+    @keyframes fadeInLeft {
+      from {opacity: 0; transform: translateX(-50px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+
+    @keyframes fadeInRight {
+      from {opacity: 0; transform: translateX(50px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+
+    .about-section h2 {
+      color: #ff1744;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      color: #ccc;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <img src="BINO.png" alt="Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🏢 About the Company -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>About the Company</h2>
+      <p>
+        BINO.inc is a forward-thinking business and technology company based in Jordan.  
+        We craft exclusive project ideas and smart business solutions for startups, companies, and entrepreneurs across industries.
+        <br><br>
+        At BINO, we blend innovation with market needs — designing solutions that are original, valuable, and ready to succeed.  
+        Whether in healthcare, education, e-commerce, or any field, we integrate technology to give businesses a competitive edge.
+      </p>
+    </div>
+    <div class="about-img">
+      <img src="teamwork.jpg" alt="Company Team">
+    </div>
+  </section>
+
+  <!-- 👩‍💼 About the Founder -->
+  <section class="about-section">
+    <div class="about-img">
+      <img src="technology.jpg" alt="Tech & Vision">
+    </div>
+    <div class="about-text">
+      <h2>About the Founder</h2>
+      <p>
+        Leen Bino is a Chechen-Jordanian tech entrepreneur and the founder of BINO.inc.  
+        Her background includes programming, game development, UI/UX design, and cybersecurity.
+        <br><br>
+        Leen leads with a passion for innovation, helping companies build impactful projects powered by modern technology.  
+        She works directly with clients, offering deep technical insight and strategic vision to bring their ideas to life.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

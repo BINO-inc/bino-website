@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BINO.inc | Business & Technology</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Intro Animation */
+    .intro {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      animation: fadeOut 1s ease-out forwards;
+      animation-delay: 3s;
+    }
+
+    .logo-intro {
+      width: 180px;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { filter: drop-shadow(0 0 5px #ff1744); }
+      50% { filter: drop-shadow(0 0 20px #ff1744); }
+      100% { filter: drop-shadow(0 0 5px #ff1744); }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .logo {
+      width: 100px;
+      margin: 20px auto 0;
+      display: block;
+    }
+
+    /* Navigation Bar */
+    .main-header nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      padding: 10px;
+    }
+
+    .main-header nav ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .main-header nav ul li a:hover {
+      color: #ff1744;
+    }
+
+    /* Images Row */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin: 30px 20px;
+    }
+
+    .image-box {
+      width: 280px;
+      height: 200px;
+      border: 4px solid #ff1744;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(255, 23, 68, 0.4);
+      animation: glow 2s infinite alternate;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 10px rgba(255, 23, 68, 0.3); }
+      to { box-shadow: 0 0 25px rgba(255, 23, 68, 0.8); }
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #ff1744;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #aaa;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111;
+      margin-top: 50px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #e53935;
+      font-size: 24px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff1744;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎬 Intro Animation -->
+  <div class="intro">
+    <img src="BINO.png" alt="BINO Intro Logo" class="logo-intro" />
+  </div>
+
+  <!-- 🔝 Navigation Bar -->
+  <header class="main-header">
+    <img src="BINO.png" alt="Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 📸 Images Row -->
+  <div class="image-row">
+    <div class="image-box">
+      <img src="BINO.png" alt="Logo Graphic">
+    </div>
+    <div class="image-box">
+      <img src="images.jpg" alt="Teamwork">
+    </div>
+    <div class="image-box">
+      <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?fit=crop&w=800&q=80" alt="Technology">
+    </div>
+  </div>
+
+  <!-- 💬 Text Section -->
+  <section class="hero">
+    <h1>Welcome to BINO.inc</h1>
+    <h2>Business & Technology Innovators</h2>
+    <p>We build unique, tech-driven projects that shape the future.</p>
+  </section>
+
+  <!-- 📩 Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="mailto:bino89921@gmail.com" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/bino.inc" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p style="color: #888; margin-top: 10px;">&copy; 2025 BINO.inc – All rights reserved</p>
+  </footer>
+
+</body>
+</html>

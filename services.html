@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | BINO.inc</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script defer src="script.js"></script>
+
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      margin: 0;
+    }
+
+    .logo {
+      width: 100px;
+      margin: 20px auto 0;
+      display: block;
+    }
+
+    .main-header nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      padding: 10px;
+    }
+
+    .main-header nav ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .main-header nav ul li a:hover {
+      color: #ff1744;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 20px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      color: #ff1744;
+      margin-bottom: 40px;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .service-box {
+      width: 300px;
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 23, 68, 0.2);
+      text-align: center;
+      animation: fadeInUp 1s ease forwards;
+      transition: transform 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(255, 23, 68, 0.4);
+    }
+
+    .service-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      animation: zoomIn 1s ease;
+    }
+
+    .service-box p {
+      color: #ccc;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111;
+      margin-top: 50px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #e53935;
+      font-size: 24px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff1744;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <img src="BINO.png" alt="Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Services</h1>
+
+    <div class="services-container">
+      <div class="service-box">
+        <img src="service1.avif" alt="Tech Idea">
+        <p>Exclusive tech-based project ideas</p>
+      </div>
+      <div class="service-box">
+        <img src="service2.jpg" alt="Market Analysis">
+        <p>Market analysis & business strategy</p>
+      </div>
+      <div class="service-box">
+        <img src="service3.jpg" alt="Development">
+        <p>Complete project development or team collaboration</p>
+      </div>
+      <div class="service-box">
+        <img src="service4.jpg" alt="Presentations">
+        <p>Professional presentations and business models</p>
+      </div>
+      <div class="service-box">
+        <img src="service5.jpg" alt="Exclusive">
+        <p>One-client exclusive concept protection</p>
+      </div>
+      <div class="service-box">
+        <img src="service6.jpeg" alt="Smart Integration">
+        <p>Smart technology integration in any industry</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="mailto:bino89921@gmail.com" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/bino.inc" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p style="color: #888; margin-top: 10px;">&copy; 2025 BINO.inc – All rights reserved</p>
+  </footer>
+
+</body>
+</html>

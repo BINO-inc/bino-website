@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | BINO.inc</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .logo {
+      width: 100px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      padding: 10px;
+    }
+
+    nav ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff1744;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      color: #ff1744;
+      margin: 40px 0 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      background-color: #ff1744;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #e53935;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    .contact-info a {
+      color: #ff1744;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #e53935;
+      font-size: 24px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ff1744;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔝 Navigation -->
+  <header class="main-header">
+    <img src="BINO.png" alt="Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 📬 Contact Section -->
+  <h1 class="section-title">Get in Touch</h1>
+
+  <section class="contact-container">
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>You can also reach us at:</p>
+      <p>Email: <a href="mailto:bino89921@gmail.com">bino89921@gmail.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/bino.inc" target="_blank">@bino.inc</a></p>
+    </div>
+  </section>
+
+  <!-- 📩 Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="mailto:bino89921@gmail.com" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/bino.inc" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p style="color: #888; margin-top: 10px;">&copy; 2025 BINO.inc – All rights reserved</p>
+  </footer>
+
+</body>
+</html>
